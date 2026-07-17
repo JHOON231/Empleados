@@ -1,0 +1,131 @@
+/* Contenedor Principal */
+.container {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Encabezado */
+.header-section {
+  margin-bottom: 20px;
+}
+
+.header-section h2 {
+  color: #2c3e50;
+  margin: 0 0 5px 0;
+  font-size: 24px;
+}
+
+.header-section p {
+  color: #7f8c8d;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Contenedor Responsive (Scroll Horizontal en móviles) */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+}
+
+/* La Tabla Moderna */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 800px; /* Asegura que mantenga forma en pantallas pequeñas sin aplastarse */
+}
+
+/* Encabezados de la Tabla */
+.custom-table th {
+  background-color: #f8fafc;
+  color: #64748b;
+  padding: 14px 16px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  border-bottom: 2px solid #edf2f7;
+}
+
+/* Celdas de la Tabla */
+.custom-table td {
+  padding: 14px 16px;
+  color: #334155;
+  font-size: 14px;
+  border-bottom: 1px solid #edf2f7;
+}
+
+/* Efecto Hover en las filas */
+.custom-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+/* Quitar el borde inferior al último registro para respetar las esquinas redondeadas */
+.custom-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Contenedor de Botones de Acción */
+.actions-container {
+  display: flex;
+  gap: 8px;
+}
+
+/* Estilos de Botones Generales */
+.btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+/* Botón Editar (Tono Azul Suave) */
+.btn-edit {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.btn-edit:hover {
+  background-color: #bae6fd;
+}
+
+/* Botón Eliminar (Tono Rojo/Rosa Suave) */
+.btn-delete {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.btn-delete:hover {
+  background-color: #fecaca;
+}
+
+/* Extra: Badge de estado (opcional por si tienes texto "Activo/Inactivo") */
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-badge.active {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.status-badge.inactive {
+  background-color: #f1f5f9;
+  color: #64748b;
+}
