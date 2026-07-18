@@ -1,0 +1,143 @@
+/* Contenedor Principal */
+.container {
+  padding: 24px;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Encabezado */
+.header-section {
+  margin-bottom: 24px;
+}
+
+.header-section h2 {
+  color: #1e293b;
+  margin: 0 0 6px 0;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.header-section p {
+  color: #64748b;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Contenedor Responsive (Scroll Horizontal en móviles) */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+}
+
+/* Estilos de la Tabla */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 850px; /* Evita que los datos se aplasten en pantallas chicas */
+}
+
+/* Encabezados */
+.custom-table th {
+  background-color: #f8fafc;
+  color: #475569;
+  padding: 16px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  border-bottom: 2px solid #edf2f7;
+}
+
+/* Celdas */
+.custom-table td {
+  padding: 16px;
+  color: #334155;
+  font-size: 14px;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+/* Título del videojuego en negrita */
+.game-title {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Hover en filas */
+.custom-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.custom-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Badges de Estado */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.status-badge.active {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.status-badge.inactive {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* Contenedor de la Barra de Progreso */
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 140px;
+}
+
+/* Estilo de la etiqueta nativa <progress> */
+progress {
+  width: 100%;
+  height: 8px;
+  border-radius: 9999px;
+  overflow: hidden;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* Color de fondo de la barra (atrás) */
+progress::-webkit-progress-bar {
+  background-color: #e2e8f0;
+  border-radius: 9999px;
+}
+
+/* Color de la barra llenándose (Vanguardia Azul Suave) */
+progress::-webkit-progress-value {
+  background-color: #3b82f6;
+  border-radius: 9999px;
+}
+
+/* Estilo para Firefox */
+progress::-moz-progress-bar {
+  background-color: #3b82f6;
+  border-radius: 9999px;
+}
+
+/* Texto del porcentaje */
+.progress-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+  min-width: 35px;
+  text-align: right;
+}
